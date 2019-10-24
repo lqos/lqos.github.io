@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="bug2048">
+<meta property="og:url" content="https://bug2048.gitee.io/index.html">
+<meta property="og:site_name" content="bug2048">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bug2048">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://bug2048.gitee.io/">
+
+
+
+
+
+  <title>bug2048</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">bug2048</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/09/18/WindowManager-android-view-WindowLeaked/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/18/WindowManager-android-view-WindowLeaked/" itemprop="url">WindowManager:android.view.WindowLeaked</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-18T18:44:44+08:00">
+                2019-09-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="窗体泄露"><a href="#窗体泄露" class="headerlink" title="窗体泄露"></a>窗体泄露</h2><p><strong>来源：</strong><br>按字面了解，Window Leaked大概就是说一个窗体泄漏了，也就是我们常说的内存泄漏，为什么窗体会泄漏呢？<br><strong>解决办法：</strong><br>关闭(finish)某个Activity前，要确保附属在上面的Dialog或PopupWindow已经关闭(dismiss)了。</p>
+<p><strong>错误日志 ：</strong></p>
+<pre><code>2019-06-05 15:45:07.008 7915-7915/com.cloudy.jun.test E/WindowManager: android.view.WindowLeaked: Activity com.xxx.xxxActivity has leaked window DecorView@c6050de[LoginActivity] that was originally added here
+        at android.view.ViewRootImpl.&lt;init&gt;(ViewRootImpl.java:622)
+        at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:391)
+        at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:129)
+        at android.app.Dialog.show(Dialog.java:471)
+        at android.app.AlertDialog$Builder.show(AlertDialog.java:1132)
+        at com.cloudy.jun.module.login.LoginActivity.onResume(xxxActivity.java:322)
+        at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1456)
+        at android.support.test.runner.MonitoringInstrumentation.callActivityOnResume(MonitoringInstrumentation.java:699)
+        at android.app.Activity.performResume(Activity.java:7611)
+        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:4336)
+        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:4394)
+        at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+        at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:145)
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:70)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2155)
+        at android.os.Handler.dispatchMessage(Handler.java:109)
+        at android.os.Looper.loop(Looper.java:207)
+        at android.app.ActivityThread.main(ActivityThread.java:7539)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:958)
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/09/18/Carsh-android-view-WindowManager/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/18/Carsh-android-view-WindowManager/" itemprop="url">Carsh:android.view.WindowManager</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-18T18:03:17+08:00">
+                2019-09-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="第一种情况"><a href="#第一种情况" class="headerlink" title="第一种情况"></a><strong>第一种情况</strong></h2><p>分析：<br>当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭</p>
+<p>出现时机：<br>在Activity 中开定时打开Dialog,然后关闭Activity；</p>
+<p>解决方法：<br>在打开Dialog或者PopupWindow，首先检测Activity是否已关闭</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* 检查Activity是否已关闭</span><br><span class="line">*/</span><br><span class="line">public static Boolean checkActivityIsRun(Activity activity) &#123;</span><br><span class="line">    if (activity == null) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    if (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) &#123;</span><br><span class="line">        return !activity.isFinishing() || !activity.isDestroyed();</span><br><span class="line">    &#125;</span><br><span class="line">    return !activity.isFinishing();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>错误日志</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">java.lang.RuntimeException: Unable to start receiver com.xxx.JpushReceiver: android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@83caed is not valid; is your activity running?</span><br><span class="line">    at android.app.ActivityThread.handleReceiver(ActivityThread.java:3398)</span><br><span class="line">    at android.app.ActivityThread.-wrap20(ActivityThread.java)</span><br><span class="line">    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1743)</span><br><span class="line">    at android.os.Handler.dispatchMessage(Handler.java:102)</span><br><span class="line">    at android.os.Looper.loop(Looper.java:154)</span><br><span class="line">    at android.app.ActivityThread.main(ActivityThread.java:6816)</span><br><span class="line">    at java.lang.reflect.Method.invoke(Native Method)</span><br><span class="line">    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1567)</span><br><span class="line">    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1455)</span><br><span class="line">Caused by: android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@83caed is not valid; is your activity running?</span><br><span class="line">    at android.view.ViewRootImpl.setView(ViewRootImpl.java:922)</span><br><span class="line">    at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:377)</span><br><span class="line">    at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:105)</span><br><span class="line">    at android.app.Dialog.show(Dialog.java:404)</span><br><span class="line">    at com.cloudy.linglingbang.activity.msg.a.c.a(ReceiverMsgLab.java:72)</span><br><span class="line">    at com.xxx.JpushReceiver.onReceive(JpushReceiver.java:42)</span><br><span class="line">    at android.app.ActivityThread.handleReceiver(ActivityThread.java:3391)</span><br><span class="line">    ... 8 more</span><br><span class="line">android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@83caed is not valid; is your activity running?</span><br><span class="line">    at android.view.ViewRootImpl.setView(ViewRootImpl.java:922)</span><br><span class="line">    at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:377)</span><br><span class="line">    at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:105)</span><br><span class="line">    at android.app.Dialog.show(Dialog.java:404)</span><br><span class="line">    at com.cloudy.linglingbang.activity.msg.a.c.a(ReceiverMsgLab.java:72)</span><br><span class="line">    at com.cloudy.linglingbang.app.receiver.JpushReceiver.onReceive(JpushReceiver.java:42)</span><br><span class="line">    at android.app.ActivityThread.handleReceiver(ActivityThread.java:3391)</span><br><span class="line">    at android.app.ActivityThread.-wrap20(ActivityThread.java)</span><br><span class="line">    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1743)</span><br><span class="line">    at android.os.Handler.dispatchMessage(Handler.java:102)</span><br><span class="line">    at android.os.Looper.loop(Looper.java:154)</span><br><span class="line">    at android.app.ActivityThread.main(ActivityThread.java:6816)</span><br><span class="line">    at java.lang.reflect.Method.invoke(Native Method)</span><br><span class="line">    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1567)</span><br><span class="line">    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1455)</span><br></pre></td></tr></table></figure>
+<h2 id="第二种情况"><a href="#第二种情况" class="headerlink" title="第二种情况"></a><strong>第二种情况</strong></h2><p>Toast 造成的<br><a href="https://bug2048.gitee.io/bolgx/2019/04/28/Android7-1-Toast%E4%B9%8B%E5%9D%91/">https://bug2048.gitee.io/bolgx/2019/04/28/Android7-1-Toast%E4%B9%8B%E5%9D%91/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/05/08/Android-TextView-字体-顶部对齐/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/08/Android-TextView-字体-顶部对齐/" itemprop="url">Android TextView 字体-顶部对齐</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-08T16:22:21+08:00">
+                2019-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在工作中，遇到这样一种需求，TextView 中有字体大小不一致的文字，要求<strong>顶部对齐</strong></p>
+<img src="/2019/05/08/Android-TextView-字体-顶部对齐/1557305193845.jpg" title="顶部对齐">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">public class TopAlignSpan extends SuperscriptSpan &#123;</span><br><span class="line"></span><br><span class="line">    /** 字体大小 */</span><br><span class="line">    private float fontSizePx;</span><br><span class="line"></span><br><span class="line">    //shift value, 0 to 1.0</span><br><span class="line">    protected float shiftPercentage = 0;</span><br><span class="line"></span><br><span class="line">    //doesn&apos;t shift</span><br><span class="line">    public TopAlignSpan(float fontSizePx) &#123;</span><br><span class="line">        this(fontSizePx, 0);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //sets the shift percentage</span><br><span class="line">    public TopAlignSpan(float fontSizePx, float shiftPercentage) &#123;</span><br><span class="line">        if (shiftPercentage &gt; 0.0 &amp;&amp; shiftPercentage &lt; 1.0) &#123;</span><br><span class="line">            this.shiftPercentage = shiftPercentage;</span><br><span class="line">        &#125;</span><br><span class="line">        this.fontSizePx = fontSizePx;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void updateDrawState(TextPaint tp) &#123;</span><br><span class="line">        //original ascent</span><br><span class="line">        float ascent = tp.ascent();</span><br><span class="line"></span><br><span class="line">        //scale down the font</span><br><span class="line">        tp.setTextSize(fontSizePx);</span><br><span class="line"></span><br><span class="line">        //get the new font ascent</span><br><span class="line">        float newAscent = tp.getFontMetrics().ascent;</span><br><span class="line"></span><br><span class="line">        //move baseline to top of old font, then move down size of new font</span><br><span class="line">        //adjust for errors with shift percentage</span><br><span class="line">     //   tp.baselineShift += (ascent - ascent * shiftPercentage)</span><br><span class="line">    //            - (newAscent - newAscent * shiftPercentage);</span><br><span class="line">    //计算基线偏移量</span><br><span class="line">  tp.baselineShift += (ascent - newAscent) * (1 - shiftPercentage);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void updateMeasureState(TextPaint tp) &#123;</span><br><span class="line">        updateDrawState(tp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><a href="https://bug2048.gitee.io/bolgx/2019/05/08/Android-TextView-%E5%AD%97%E4%BD%93-%E9%A1%B6%E9%83%A8%E5%AF%B9%E9%BD%90/">https://bug2048.gitee.io/bolgx/2019/05/08/Android-TextView-%E5%AD%97%E4%BD%93-%E9%A1%B6%E9%83%A8%E5%AF%B9%E9%BD%90/</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/04/29/Android-studio-调试技巧/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/29/Android-studio-调试技巧/" itemprop="url">Android studio 调试技巧</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-29T11:45:40+08:00">
+                2019-04-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="设置断点"><a href="#设置断点" class="headerlink" title="设置断点"></a>设置断点</h4><img src="/2019/04/29/Android-studio-调试技巧/1556506902382.jpg" title="设置断点">
+<h4 id="开启调试模式"><a href="#开启调试模式" class="headerlink" title="开启调试模式"></a>开启调试模式</h4><p>快捷键：mac: control+D<br>或者<br><img src="/2019/04/29/Android-studio-调试技巧/1556507143331.jpg" title="开启调试模式"><br>重点来了。。。</p>
+<h4 id="重点来了"><a href="#重点来了" class="headerlink" title="重点来了"></a>重点来了</h4><h5 id="条件断点"><a href="#条件断点" class="headerlink" title="条件断点"></a>条件断点</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int value = 0;</span><br><span class="line">for(int i=0;i&lt;100;i++)&#123;</span><br><span class="line">	value+=i;</span><br><span class="line">&#125;</span><br><span class="line">Log.i(&quot;tag&quot;,&quot;value = &quot; + value);</span><br></pre></td></tr></table></figure>
+<p>若i 的值为50，我们查看下value的值。  如何做呢？我们以上代码不做修改。<br>常规方法：一步步循环，知道i值为50 为止。这样费时费力，要是查看i值为80时value的值呢？<br><strong>重点 重点 as早就为我们想好了</strong><br><img src="/2019/04/29/Android-studio-调试技巧/1556508262776.jpg" title="选择调试的进程"><br>快捷键<br>按上control，然后鼠标点击断点(就是那个小红点)</p>
+<h5 id="我想调试"><a href="#我想调试" class="headerlink" title="我想调试"></a>我想调试</h5><p>运行普通模式，非调试模式，发现某个结果显示不正确，断点调试下。<br>可以直接调试吗？不再重新启动调试模式？<br>答案是可以的。<br><strong>attach process</strong><br><img src="/2019/04/29/Android-studio-调试技巧/1556509126109.jpg" title="attach process"><br>然后有一弹窗如下，选择调试的进程<br><img src="/2019/04/29/Android-studio-调试技巧/1556509340221.jpg" title="选择调试的进程"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/04/28/Android7-1-Toast之坑/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/28/Android7-1-Toast之坑/" itemprop="url">Android7.1 Toast之坑</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-28T16:27:19+08:00">
+                2019-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Toast 作为 Android 常用的控件之一，突然在友盟统计上发现Toast报错了，那就需要麻溜的解决了。</p>
+<h4 id="复现"><a href="#复现" class="headerlink" title="复现"></a>复现</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Toast.makeText(getContext(), &quot;我的Toast&quot;, Toast.LENGTH_SHORT).show();</span><br><span class="line">     try &#123;</span><br><span class="line">         Thread.sleep(5_000);</span><br><span class="line">     &#125; catch (InterruptedException e) &#123;</span><br><span class="line">         e.printStackTrace();</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="错误日志"><a href="#错误日志" class="headerlink" title="错误日志"></a>错误日志</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@a22690b is not valid; is your activity running?</span><br><span class="line">     at android.view.ViewRootImpl.setView(ViewRootImpl.java:679)</span><br><span class="line">     at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:342)</span><br><span class="line">     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)</span><br><span class="line">     at android.widget.Toast$TN.handleShow(Toast.java:459)</span><br><span class="line">     at android.widget.Toast$TN$2.handleMessage(Toast.java:342)</span><br><span class="line">     at android.os.Handler.dispatchMessage(Handler.java:102)</span><br><span class="line">     at android.os.Looper.loop(Looper.java:154)</span><br><span class="line">     at android.app.ActivityThread.main(ActivityThread.java:6119)</span><br><span class="line">     at java.lang.reflect.Method.invoke(Native Method)</span><br><span class="line">     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)</span><br><span class="line">     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)</span><br></pre></td></tr></table></figure>
+<h4 id="出现原因"><a href="#出现原因" class="headerlink" title="出现原因"></a>出现原因</h4><p>API 25, Android 为Toast增加了一个IBinder windowToken 去处理Toast#handleShow()，从而导致了一个运行时错误:BadTokenException 。<br>坑的理由：<br>其他版本上不会出现。因为 google在该版本开始对TYPE TOAST进行管控，防止一个应用的悬浮窗一直悬浮在另一个应用上造成干扰，但是Android团队意识到这个崩溃问题，从而在API 26的时候，在Toast的内部加了try-catch保护捕获了这个错误。<br>目前只有7.1.1上面的Toast存在这个问题，崩溃在系统源码里。APP层可以通过自定义Toast类，反射替换TN的内部成员变量mHandler，从而添加try-catch做到workaround，所有使用Toast的地方都使用这个自定义的，不要直接使用系统原生的<br>具体源码对比 Toast#TN#Handler：<br>API25:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public void handleShow(IBinder windowToken) &#123;</span><br><span class="line">    if (localLOGV) Log.v(TAG, &quot;HANDLE SHOW: &quot; + this + &quot; mView=&quot; + mView</span><br><span class="line">            + &quot; mNextView=&quot; + mNextView);</span><br><span class="line">    if (mView != mNextView) &#123;</span><br><span class="line">    ...</span><br><span class="line">    ...</span><br><span class="line">        if (localLOGV) Log.v(TAG, &quot;ADD! &quot; + mView + &quot; in &quot; + this);</span><br><span class="line">        mWM.addView(mView, mParams);</span><br><span class="line">        trySendAccessibilityEvent();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>API:26</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">public void handleShow(IBinder windowToken) &#123;</span><br><span class="line">    if (localLOGV) Log.v(TAG, &quot;HANDLE SHOW: &quot; + this + &quot; mView=&quot; + mView</span><br><span class="line">            + &quot; mNextView=&quot; + mNextView);</span><br><span class="line">    // If a cancel/hide is pending - no need to show - at this point</span><br><span class="line">    // the window token is already invalid and no need to do any work.</span><br><span class="line">    if (mHandler.hasMessages(CANCEL) || mHandler.hasMessages(HIDE)) &#123;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">    if (mView != mNextView) &#123;</span><br><span class="line">    ...</span><br><span class="line">    ...</span><br><span class="line">        try &#123;</span><br><span class="line">            mWM.addView(mView, mParams);</span><br><span class="line">            trySendAccessibilityEvent();</span><br><span class="line">        &#125; catch (WindowManager.BadTokenException e) &#123;</span><br><span class="line">            /* ignore */</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">public class ToastCompat &#123;</span><br><span class="line"></span><br><span class="line">    private static Field sField_TN;</span><br><span class="line">    private static Field sField_TN_Handler; </span><br><span class="line"></span><br><span class="line">    static &#123;</span><br><span class="line">        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N_MR1) &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                sField_TN = Toast.class.getDeclaredField(&quot;mTN&quot;);</span><br><span class="line">                sField_TN.setAccessible(true);</span><br><span class="line"></span><br><span class="line">                sField_TN_Handler = sField_TN.getType().getDeclaredField(&quot;mHandler&quot;);</span><br><span class="line">                sField_TN_Handler.setAccessible(true);</span><br><span class="line">            &#125; catch (Exception e) &#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static void hook(Toast toast) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            Object tn = sField_TN.get(toast);</span><br><span class="line">            Handler preHandler = (Handler) sField_TN_Handler.get(tn);</span><br><span class="line">            sField_TN_Handler.set(tn, new SafelyHandlerWarpper(preHandler));</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static void showToast(Context context, CharSequence cs, int length) &#123;</span><br><span class="line">        Toast toast = Toast.makeText(context, cs, length);</span><br><span class="line">        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N_MR1) &#123;</span><br><span class="line">            hook(toast);</span><br><span class="line">        &#125;</span><br><span class="line">        toast.show();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private static class SafelyHandlerWarpper extends Handler &#123;</span><br><span class="line"></span><br><span class="line">        private Handler impl;</span><br><span class="line"></span><br><span class="line">        public SafelyHandlerWarpper(Handler impl) &#123;</span><br><span class="line">            this.impl = impl;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void handleMessage(Message msg) &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                impl.handleMessage(msg);</span><br><span class="line">            &#125; catch (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考：<a href="https://cloud.tencent.com/developer/article/1034225" target="_blank" rel="noopener">https://cloud.tencent.com/developer/article/1034225</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/04/26/Android最新版本号与API级别对应关系/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/26/Android最新版本号与API级别对应关系/" itemprop="url">Android最新版本号与API级别对应关系</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-26T15:25:58+08:00">
+                2019-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <table>
+<thead>
+<tr>
+<th>平台版本</th>
+<th>API 级别</th>
+<th>发布时间</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Android Q</td>
+<td>Q</td>
+<td>2019年03月14日</td>
+</tr>
+<tr>
+<td>Android 9.0</td>
+<td>28</td>
+<td>2018年08月06日</td>
+</tr>
+<tr>
+<td>Android 8.1</td>
+<td>27</td>
+<td>2017年12月05日</td>
+</tr>
+<tr>
+<td>Android 8.0</td>
+<td>26</td>
+<td>2017年08月21日</td>
+</tr>
+<tr>
+<td>Android 7.1</td>
+<td>25</td>
+<td>2016年10月04日</td>
+</tr>
+<tr>
+<td>Android 7.0</td>
+<td>24</td>
+<td>2016年08月22日</td>
+</tr>
+<tr>
+<td>Android 6.0</td>
+<td>23</td>
+<td>2015年10月05日</td>
+</tr>
+<tr>
+<td>Android 5.1</td>
+<td>22</td>
+<td>2015年03月09日</td>
+</tr>
+<tr>
+<td>Android 5.0</td>
+<td>22</td>
+<td>2014年11月03日</td>
+</tr>
+<tr>
+<td>Android 4.4W</td>
+<td>20</td>
+<td>2014年06月01日</td>
+</tr>
+<tr>
+<td>Android 4.4</td>
+<td>19</td>
+<td>2013年10月31日</td>
+</tr>
+<tr>
+<td>Android 4.3</td>
+<td>18</td>
+<td>2013年07月24日</td>
+</tr>
+<tr>
+<td>Android 4.2</td>
+<td>17</td>
+<td>2012年11月13日</td>
+</tr>
+<tr>
+<td>Android 4.1</td>
+<td>16</td>
+<td>2012年07月09日</td>
+</tr>
+<tr>
+<td>Android 4.0.3</td>
+<td>15</td>
+<td>2011年12月01日</td>
+</tr>
+<tr>
+<td>Android 4.0</td>
+<td>14</td>
+<td>2011年10月19日</td>
+</tr>
+<tr>
+<td>Android 3.2</td>
+<td>13</td>
+<td>2011年06月01日</td>
+</tr>
+<tr>
+<td>Android 3.1</td>
+<td>12</td>
+<td>2011年05月01日</td>
+</tr>
+<tr>
+<td>Android 3.0</td>
+<td>11</td>
+<td>2011年02月01日</td>
+</tr>
+<tr>
+<td>Android 2.3.3</td>
+<td>10</td>
+<td>2011年02月01日</td>
+</tr>
+<tr>
+<td>Android 2.3</td>
+<td>9</td>
+<td>2011年02月09日</td>
+</tr>
+<tr>
+<td>Android 2.2</td>
+<td>8</td>
+<td>2010年06月01日</td>
+</tr>
+<tr>
+<td>Android 2.1</td>
+<td>7</td>
+<td>2010年01月01日</td>
+</tr>
+</tbody>
+</table>
+<p><strong>参考</strong><br><a href="https://zh.wikipedia.org/wiki/Android#%E6%9B%B4%E6%96%B0%E6%99%82%E9%96%93%E8%A1%A8" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/Android#%E6%9B%B4%E6%96%B0%E6%99%82%E9%96%93%E8%A1%A8</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/04/26/Android-apk-文件结构分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/26/Android-apk-文件结构分析/" itemprop="url">Android apk 文件结构分析</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-26T14:10:27+08:00">
+                2019-04-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>APK 是 Android  PacKage 的缩写，即 Android 安装包。将 APK 文件直接传到 Android 模拟器或 Android 手机中执行即可安装。 APK 文件其实是 zip 格式，但后缀名被修改为 apk 。<br>后缀改为zip解压如下：<br>| 文件/目录 | 作用 |<br>|–|–|<br>|META-INF/  |  |<br>|res/  | 资源文件目录 |<br>|libs/  | 如果存在的话，存放的是 ndk 编出来的 so 库 |<br>|AndroidManifest.xml  | 程序全局配置文件 |<br>|classes.dex  | dalvik 字节码   |<br>|resources.ars  |  编译后的二进制资源文件|</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/04/24/transient-关键字/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/24/transient-关键字/" itemprop="url">transient 关键字</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-24T15:38:06+08:00">
+                2019-04-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="认识transient"><a href="#认识transient" class="headerlink" title="认识transient"></a>认识transient</h1><p>transient 中文意思是短暂的，临时的。</p>
+<p>Java中transient关键字的作用，简单地说，就是让某些被修饰的成员属性变量不被序列化，这一看好像很好理解，就是不被序列化，那么什么情况下，一个对象的某些字段不需要被序列化呢？如果有如下情况，可以考虑使用关键字transient修饰：</p>
+<p>1、类中的字段值可以根据其它字段推导出来，如一个长方形类有三个属性：长度、宽度、面积（示例而已，一般不会这样设计），那么在序列化的时候，面积这个属性就没必要被序列化了；</p>
+<p>2、其它如密码，看具体业务需求吧，哪些字段不想被序列化；</p>
+<p>PS ArrayList、HashMap等源码中也使用transient关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * The number of times this HashMap has been structurally modified</span><br><span class="line"> * Structural modifications are those that change the number of mappings in</span><br><span class="line"> * the HashMap or otherwise modify its internal structure (e.g.,</span><br><span class="line"> * rehash).  This field is used to make iterators on Collection-views of</span><br><span class="line"> * the HashMap fail-fast.  (See ConcurrentModificationException).</span><br><span class="line"> */</span><br><span class="line">transient int modCount;</span><br></pre></td></tr></table></figure></p>
+<h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">class Rectangle implements Serializable&#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     *</span><br><span class="line">     */</span><br><span class="line">    private static final long serialVersionUID = 1710022455003682613L;</span><br><span class="line">    private Integer width;</span><br><span class="line">    private Integer height;</span><br><span class="line">    private transient Integer area;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public Rectangle (Integer width, Integer height)&#123;</span><br><span class="line">        this.width = width;</span><br><span class="line">        this.height = height;</span><br><span class="line">        this.area = width * height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setArea()&#123;</span><br><span class="line">        this.area = this.width * this.height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String toString()&#123;</span><br><span class="line">        StringBuffer sb = new StringBuffer(40);</span><br><span class="line">        sb.append(&quot;width : &quot;);</span><br><span class="line">        sb.append(this.width);</span><br><span class="line">        sb.append(&quot;\nheight : &quot;);</span><br><span class="line">        sb.append(this.height);</span><br><span class="line">        sb.append(&quot;\narea : &quot;);</span><br><span class="line">        sb.append(this.area);</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class TransientExample&#123;</span><br><span class="line">    public static void main(String args[]) throws Exception &#123;</span><br><span class="line">        Rectangle rectangle = new Rectangle(3,4);</span><br><span class="line">        System.out.println(&quot;1.原始对象\n&quot;+rectangle);</span><br><span class="line">        ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream(&quot;rectangle&quot;));</span><br><span class="line">        // 往流写入对象</span><br><span class="line">        o.writeObject(rectangle);</span><br><span class="line">        o.close();</span><br><span class="line"></span><br><span class="line">        // 从流读取对象</span><br><span class="line">        ObjectInputStream in = new ObjectInputStream(new FileInputStream(&quot;rectangle&quot;));</span><br><span class="line">        Rectangle rectangle1 = (Rectangle)in.readObject();</span><br><span class="line">        System.out.println(&quot;2.反序列化后的对象\n&quot;+rectangle1);</span><br><span class="line">        rectangle1.setArea();</span><br><span class="line">        System.out.println(&quot;3.恢复成原始对象\n&quot;+rectangle1);</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>打印结果是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.原始对象</span><br><span class="line">width : 3</span><br><span class="line">height : 4</span><br><span class="line">area : 12</span><br><span class="line">2.反序列化后的对象</span><br><span class="line">width : 3</span><br><span class="line">height : 4</span><br><span class="line">area : null</span><br><span class="line">3.恢复成原始对象</span><br><span class="line">width : 3</span><br><span class="line">height : 4</span><br><span class="line">area : 12</span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1）一旦变量被<strong>transient</strong>修饰，变量将不再是对象持久化的一部分，该变量内容在序列化后无法获得访问。</p>
+<p>2）<strong>transient</strong>关键字只能修饰变量，而不能修饰方法和类。注意，本地变量是不能被transient关键字修饰的。变量如果是用户自定义类变量，则该类需要实现Serializable接口。</p>
+<p>3）被<strong>transient</strong>关键字修饰的变量不再能被序列化，一个静态变量不管是否被transient修饰，均不能被序列化。</p>
+<p>PS：使用<strong>Externalizable</strong>序列化，不论是否使用transient修饰，都将被序列化。<br>Externalizable 是 Serializable 的派生类，实现了writeExternal(out)和readExternal(in) ;具体可自己尝试下</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/04/23/java-enum-枚举比较-or-equals/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="bug2048">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="bug2048">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/23/java-enum-枚举比较-or-equals/" itemprop="url">java enum 枚举比较 == or equals ??</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-23T18:41:25+08:00">
+                2019-04-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a><strong>问题</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public static enum MessageDirection &#123;</span><br><span class="line">    SEND(1),</span><br><span class="line">    RECEIVE(2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在使用枚举比较时，使用了equals来比较两个枚举值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if(data.getMessageDirection().equals(Message.MessageDirection.SEND))    &#123;	</span><br><span class="line">    ...</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p><em>结果空指针了</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">java.lang.NullPointerException: Attempt to invoke virtual method &apos;boolean xxx.MessageDirection.equals(java.lang.Object)&apos; on a null object reference</span><br><span class="line">    at xxx.bindView(ConversationFragments.java:66)</span><br><span class="line">    at xxx.bindView(ConversationFragments.java:31)</span><br><span class="line">    at xxx.getView(BaseAdapter.java:111)</span><br><span class="line">    at android.widget.HeaderViewListAdapter.getView(HeaderViewListAdapter.java:230)</span><br><span class="line">    at android.widget.AbsListView.obtainView(AbsListView.java:2428)</span><br></pre></td></tr></table></figure>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a><strong>解决方案</strong></h2><p>1、还是使用 equals 来比较，但是需要调转顺序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (Message.MessageDirection.SEND.equals(data.getMessageDirection()))    &#123;	</span><br><span class="line">      ...</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>2、直接使用 == </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> if (data.getMessageDirection() == Message.MessageDirection.SEND)    &#123;	</span><br><span class="line">   ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="查看enum源码"><a href="#查看enum源码" class="headerlink" title="查看enum源码"></a><strong>查看enum源码</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">        * Returns true if the specified object is equal to this</span><br><span class="line">        * enum constant.</span><br><span class="line">        *</span><br><span class="line">        * @param other the object to be compared for equality with this object.</span><br><span class="line">        * @return  true if the specified object is equal to this</span><br><span class="line">        *          enum constant.</span><br><span class="line">        */</span><br><span class="line">       public final boolean equals(Object other) &#123;</span><br><span class="line">           return this==other;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+<p>发现源码中直接使用 == </p>
+<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><strong>建议</strong></h2><p>枚举比较还是直接使用 == 来比较，这样比较直观，也可以避免使用equals因调用者为null而报空指针异常</p>
+<p><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">bug2048</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">bug2048</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
