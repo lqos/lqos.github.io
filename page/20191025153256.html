@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Android,Java,枚举,">
+  <meta name="keywords" content="java,设计模式,">
 
 
 
@@ -81,18 +81,20 @@
 
 
 
-<meta name="description" content="问题1234public static enum MessageDirection &amp;#123;    SEND(1),    RECEIVE(2);&amp;#125; 在使用枚举比较时，使用了equals来比较两个枚举值 123if(data.getMessageDirection().equals(Message.MessageDirection.SEND))    &amp;#123;	    ... &amp;">
-<meta name="keywords" content="Android,Java,枚举">
+<meta name="description" content="git ssh 公钥生成 一台设备可能存在多个git账号，如何管理呢？ 下面那两个git账号举例说明 第一个账号 xxxxxx@qq.com(github.com ) 第一个账号 xxxxxx@163.com（git.oschina.net） 步骤一、    设置Git的user name和email：12$ git config --global user.name &amp;quot;username">
+<meta name="keywords" content="java,设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java enum 枚举比较 == or equals ??">
-<meta property="og:url" content="https://bug2048.gitee.io/page/20190423184125.html">
+<meta property="og:title" content="Git多个账户冲突问题解决">
+<meta property="og:url" content="https://bug2048.gitee.io/page/20191025153256.html">
 <meta property="og:site_name" content="bug2048">
-<meta property="og:description" content="问题1234public static enum MessageDirection &amp;#123;    SEND(1),    RECEIVE(2);&amp;#125; 在使用枚举比较时，使用了equals来比较两个枚举值 123if(data.getMessageDirection().equals(Message.MessageDirection.SEND))    &amp;#123;	    ... &amp;">
+<meta property="og:description" content="git ssh 公钥生成 一台设备可能存在多个git账号，如何管理呢？ 下面那两个git账号举例说明 第一个账号 xxxxxx@qq.com(github.com ) 第一个账号 xxxxxx@163.com（git.oschina.net） 步骤一、    设置Git的user name和email：12$ git config --global user.name &amp;quot;username">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T06:50:12.552Z">
+<meta property="og:image" content="https://bug2048.gitee.io/page/20191025153256/1556509340222.jpeg">
+<meta property="og:updated_time" content="2019-10-25T07:28:23.716Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java enum 枚举比较 == or equals ??">
-<meta name="twitter:description" content="问题1234public static enum MessageDirection &amp;#123;    SEND(1),    RECEIVE(2);&amp;#125; 在使用枚举比较时，使用了equals来比较两个枚举值 123if(data.getMessageDirection().equals(Message.MessageDirection.SEND))    &amp;#123;	    ... &amp;">
+<meta name="twitter:title" content="Git多个账户冲突问题解决">
+<meta name="twitter:description" content="git ssh 公钥生成 一台设备可能存在多个git账号，如何管理呢？ 下面那两个git账号举例说明 第一个账号 xxxxxx@qq.com(github.com ) 第一个账号 xxxxxx@163.com（git.oschina.net） 步骤一、    设置Git的user name和email：12$ git config --global user.name &amp;quot;username">
+<meta name="twitter:image" content="https://bug2048.gitee.io/page/20191025153256/1556509340222.jpeg">
 
 
 
@@ -122,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://bug2048.gitee.io/page/20190423184125.html">
+  <link rel="canonical" href="https://bug2048.gitee.io/page/20191025153256.html">
 
 
 
 
 
-  <title>java enum 枚举比较 == or equals ?? | bug2048</title>
+  <title>Git多个账户冲突问题解决 | bug2048</title>
   
 
 
@@ -265,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/page/20190423184125.html">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/page/20191025153256.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bug2048">
@@ -282,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">java enum 枚举比较 == or equals ??</h1>
+          <h1 class="post-title" itemprop="name headline">Git多个账户冲突问题解决</h1>
         
 
         <div class="post-meta">
@@ -294,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-23T18:41:25+08:00">
-                2019-04-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-25T15:32:56+08:00">
+                2019-10-25
               </time>
             
 
@@ -326,7 +328,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  259
+                  260
                 </span>
               
 
@@ -363,19 +365,18 @@
       
 
       
-        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a><strong>问题</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public static enum MessageDirection &#123;</span><br><span class="line">    SEND(1),</span><br><span class="line">    RECEIVE(2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在使用枚举比较时，使用了equals来比较两个枚举值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if(data.getMessageDirection().equals(Message.MessageDirection.SEND))    &#123;	</span><br><span class="line">    ...</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p><em>结果空指针了</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">java.lang.NullPointerException: Attempt to invoke virtual method &apos;boolean xxx.MessageDirection.equals(java.lang.Object)&apos; on a null object reference</span><br><span class="line">    at xxx.bindView(ConversationFragments.java:66)</span><br><span class="line">    at xxx.bindView(ConversationFragments.java:31)</span><br><span class="line">    at xxx.getView(BaseAdapter.java:111)</span><br><span class="line">    at android.widget.HeaderViewListAdapter.getView(HeaderViewListAdapter.java:230)</span><br><span class="line">    at android.widget.AbsListView.obtainView(AbsListView.java:2428)</span><br></pre></td></tr></table></figure>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a><strong>解决方案</strong></h2><p>1、还是使用 equals 来比较，但是需要调转顺序</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (Message.MessageDirection.SEND.equals(data.getMessageDirection()))    &#123;	</span><br><span class="line">      ...</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>2、直接使用 == </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> if (data.getMessageDirection() == Message.MessageDirection.SEND)    &#123;	</span><br><span class="line">   ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="查看enum源码"><a href="#查看enum源码" class="headerlink" title="查看enum源码"></a><strong>查看enum源码</strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">        * Returns true if the specified object is equal to this</span><br><span class="line">        * enum constant.</span><br><span class="line">        *</span><br><span class="line">        * @param other the object to be compared for equality with this object.</span><br><span class="line">        * @return  true if the specified object is equal to this</span><br><span class="line">        *          enum constant.</span><br><span class="line">        */</span><br><span class="line">       public final boolean equals(Object other) &#123;</span><br><span class="line">           return this==other;</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
-<p>发现源码中直接使用 == </p>
-<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a><strong>建议</strong></h2><p>枚举比较还是直接使用 == 来比较，这样比较直观，也可以避免使用equals因调用者为null而报空指针异常</p>
-<p><a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html</a></p>
+        <p><strong><a href="https://blog.csdn.net/mylike_45/article/details/53103023" target="_blank" rel="noopener">git ssh 公钥生成</a></strong></p>
+<p>一台设备可能存在多个git账号，如何管理呢？ 下面那两个git账号举例说明</p>
+<p>第一个账号<br> <a href="mailto:xxxxxx@qq.com" target="_blank" rel="noopener">xxxxxx@qq.com</a>(<a href="https://github.com" target="_blank" rel="noopener">github.com</a> )<br> 第一个账号<br> <a href="mailto:xxxxxx@163.com" target="_blank" rel="noopener">xxxxxx@163.com</a>（<a href="http://git.oschina.net" target="_blank" rel="noopener">git.oschina.net</a>）</p>
+<p>步骤一、<br>    设置Git的user name和email：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;username&quot;</span><br><span class="line">$ git config --global user.email &quot;xxxxx@xxxxxxx.xxxx&quot;</span><br></pre></td></tr></table></figure></p>
+<p>步骤二、<br>    生成公钥<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxx@xxx.xx&quot;</span><br></pre></td></tr></table></figure></p>
+<p>回车后 会出现<br><img src="/page/20191025153256/1556509340222.jpeg" title="attach process"><br>注意重点<br>在C:\Users\Administrator.ssh 目录下会发现 文件 enetic.pub 这就是第一个账号的公钥</p>
+<p>然后重复步骤一、步骤二生成第二个账号的公钥 enetic2.pub</p>
+<p>登陆对应账号(<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>) 上传公钥</p>
+<p>步骤三 配置文件  配置主机host</p>
+<p>在C:\Users\Administrator.ssh 目录下新建文件config 添加配置信息如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 配置 xxxxxx@qq.com（gi）</span><br><span class="line">Host github.com            </span><br><span class="line">    HostName github.com  </span><br><span class="line">    IdentityFile C:\\Users\\Administrator\\.ssh\\enetic</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    User username1</span><br><span class="line"></span><br><span class="line"># 配置git.oschina.net </span><br><span class="line">Host git.oschina.net </span><br><span class="line">    HostName git.oschina.net</span><br><span class="line">    IdentityFile C:\\Users\\Administrator\\.ssh\\enetic2</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    User username2</span><br></pre></td></tr></table></figure>
+<p>这样就配置完毕啦 </p>
 
       
     </div>
@@ -395,12 +396,12 @@
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
 
-  <p><span>本文标题:</span>java enum 枚举比较 == or equals ??</p>
+  <p><span>本文标题:</span>Git多个账户冲突问题解决</p>
   <p><span>文章作者:</span>bug2048</p>
-  <p><span>发布时间:</span>2019年04月23日 - 18:41:25</p>
-  <p><span>最后更新:</span>2019年10月25日 - 14:50:12</p>
-  <p><span>原始链接:</span><a href="/page/20190423184125.html" title="java enum 枚举比较 == or equals ??">https://bug2048.gitee.io/page/20190423184125.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://bug2048.gitee.io/page/20190423184125.html" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年10月25日 - 15:32:56</p>
+  <p><span>最后更新:</span>2019年10月25日 - 15:28:23</p>
+  <p><span>原始链接:</span><a href="/page/20191025153256.html" title="Git多个账户冲突问题解决">https://bug2048.gitee.io/page/20191025153256.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://bug2048.gitee.io/page/20191025153256.html" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -460,11 +461,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Android/" rel="tag"># Android</a>
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            <a href="/tags/Java/" rel="tag"># Java</a>
-          
-            <a href="/tags/枚举/" rel="tag"># 枚举</a>
+            <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
           
         </div>
       
@@ -477,15 +476,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/page/20191025144443.html" rel="next" title="大话单例模式">
+                <i class="fa fa-chevron-left"></i> 大话单例模式
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/page/20190424153806.html" rel="prev" title="transient 关键字">
-                transient 关键字 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -537,17 +536,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -614,22 +604,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看enum源码"><span class="nav-number">3.</span> <span class="nav-text">查看enum源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建议"><span class="nav-number">4.</span> <span class="nav-text">建议</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

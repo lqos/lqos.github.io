@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://bug2048.gitee.io/"/>
-  <updated>2019-10-25T06:46:59.937Z</updated>
+  <updated>2019-10-25T07:28:23.716Z</updated>
   <id>https://bug2048.gitee.io/</id>
   
   <author>
@@ -17,17 +17,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>wokaudfhsdfhjs</title>
+    <title>Git多个账户冲突问题解决</title>
+    <link href="https://bug2048.gitee.io/page/20191025153256.html"/>
+    <id>https://bug2048.gitee.io/page/20191025153256.html</id>
+    <published>2019-10-25T07:32:56.000Z</published>
+    <updated>2019-10-25T07:28:23.716Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><a href="https://blog.csdn.net/mylike_45/article/details/53103023" target="_blank" rel="noopener">git ssh 公钥生成</a></strong></p><p>一台设备可能存在多个git账号，如何管理呢？ 下面那两个git账号举例说明</p><p>第一个账号<br> <a href="mailto:xxxxxx@qq.com" target="_blank" rel="noopener">xxxxxx@qq.com</a>(<a href="https://github.com" target="_blank" rel="noopener">github.com</a> )<br> 第一个账号<br> <a href="mailto:xxxxxx@163.com" target="_blank" rel="noopener">xxxxxx@163.com</a>（<a href="http://git.oschina.net" target="_blank" rel="noopener">git.oschina.net</a>）</p><p>步骤一、<br>    设置Git的user name和email：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;username&quot;</span><br><span class="line">$ git config --global user.email &quot;xxxxx@xxxxxxx.xxxx&quot;</span><br></pre></td></tr></table></figure></p><p>步骤二、<br>    生成公钥<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxx@xxx.xx&quot;</span><br></pre></td></tr></table></figure></p><p>回车后 会出现<br><img src="/page/20191025153256/1556509340222.jpeg" title="attach process"><br>注意重点<br>在C:\Users\Administrator.ssh 目录下会发现 文件 enetic.pub 这就是第一个账号的公钥</p><p>然后重复步骤一、步骤二生成第二个账号的公钥 enetic2.pub</p><p>登陆对应账号(<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>) 上传公钥</p><p>步骤三 配置文件  配置主机host</p><p>在C:\Users\Administrator.ssh 目录下新建文件config 添加配置信息如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 配置 xxxxxx@qq.com（gi）</span><br><span class="line">Host github.com            </span><br><span class="line">    HostName github.com  </span><br><span class="line">    IdentityFile C:\\Users\\Administrator\\.ssh\\enetic</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    User username1</span><br><span class="line"></span><br><span class="line"># 配置git.oschina.net </span><br><span class="line">Host git.oschina.net </span><br><span class="line">    HostName git.oschina.net</span><br><span class="line">    IdentityFile C:\\Users\\Administrator\\.ssh\\enetic2</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    User username2</span><br></pre></td></tr></table></figure><p>这样就配置完毕啦 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://blog.csdn.net/mylike_45/article/details/53103023&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;git ssh 公钥生成&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="java" scheme="https://bug2048.gitee.io/tags/java/"/>
+    
+      <category term="设计模式" scheme="https://bug2048.gitee.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大话单例模式</title>
     <link href="https://bug2048.gitee.io/page/20191025144443.html"/>
     <id>https://bug2048.gitee.io/page/20191025144443.html</id>
     <published>2019-10-25T06:44:43.000Z</published>
-    <updated>2019-10-25T06:46:59.937Z</updated>
+    <updated>2019-10-25T07:21:51.293Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
+    
+      <category term="java" scheme="https://bug2048.gitee.io/tags/java/"/>
+    
+      <category term="设计模式" scheme="https://bug2048.gitee.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
@@ -116,7 +147,7 @@
     <link href="https://bug2048.gitee.io/page/20190429114540.html"/>
     <id>https://bug2048.gitee.io/page/20190429114540.html</id>
     <published>2019-04-29T03:45:40.000Z</published>
-    <updated>2019-10-25T06:49:42.900Z</updated>
+    <updated>2019-10-25T07:19:29.781Z</updated>
     
     <content type="html"><![CDATA[<h4 id="设置断点"><a href="#设置断点" class="headerlink" title="设置断点"></a>设置断点</h4><img src="/page/20190429114540/1556506902382.jpg" title="设置断点"><h4 id="开启调试模式"><a href="#开启调试模式" class="headerlink" title="开启调试模式"></a>开启调试模式</h4><p>快捷键：mac: control+D<br>或者<br><img src="/page/20190429114540/1556507143331.jpg" title="开启调试模式"><br>重点来了。。。</p><h4 id="重点来了"><a href="#重点来了" class="headerlink" title="重点来了"></a>重点来了</h4><h5 id="条件断点"><a href="#条件断点" class="headerlink" title="条件断点"></a>条件断点</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int value = 0;</span><br><span class="line">for(int i=0;i&lt;100;i++)&#123;</span><br><span class="line">value+=i;</span><br><span class="line">&#125;</span><br><span class="line">Log.i(&quot;tag&quot;,&quot;value = &quot; + value);</span><br></pre></td></tr></table></figure><p>若i 的值为50，我们查看下value的值。  如何做呢？我们以上代码不做修改。<br>常规方法：一步步循环，知道i值为50 为止。这样费时费力，要是查看i值为80时value的值呢？<br><strong>重点 重点 as早就为我们想好了</strong><br><img src="/page/20190429114540/1556508262776.jpg" title="选择调试的进程"><br>快捷键<br>按上control，然后鼠标点击断点(就是那个小红点)</p><h5 id="我想调试"><a href="#我想调试" class="headerlink" title="我想调试"></a>我想调试</h5><p>运行普通模式，非调试模式，发现某个结果显示不正确，断点调试下。<br>可以直接调试吗？不再重新启动调试模式？<br>答案是可以的。<br><strong>attach process</strong><br><img src="/page/20190429114540/1556509126109.jpg" title="attach process"><br>然后有一弹窗如下，选择调试的进程<br><img src="/page/20190429114540/1556509340221.jpg" title="选择调试的进程"></p>]]></content>
     
