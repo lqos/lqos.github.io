@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Android,Toast,WindowManager$BadTokenException,">
+  <meta name="keywords" content="Android,">
 
 
 
@@ -82,14 +82,14 @@
 
 
 <meta name="description" content="Toast 作为 Android 常用的控件之一，突然在友盟统计上发现Toast报错了，那就需要麻溜的解决了。 复现123456Toast.makeText(getContext(), &amp;quot;我的Toast&amp;quot;, Toast.LENGTH_SHORT).show();     try &amp;#123;         Thread.sleep(5_000);     &amp;#125; cat">
-<meta name="keywords" content="Android,Toast,WindowManager$BadTokenException">
+<meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android7.1 Toast之坑">
 <meta property="og:url" content="https://bug2048.gitee.io/page/20190428162719.html">
 <meta property="og:site_name" content="bug2048">
 <meta property="og:description" content="Toast 作为 Android 常用的控件之一，突然在友盟统计上发现Toast报错了，那就需要麻溜的解决了。 复现123456Toast.makeText(getContext(), &amp;quot;我的Toast&amp;quot;, Toast.LENGTH_SHORT).show();     try &amp;#123;         Thread.sleep(5_000);     &amp;#125; cat">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T06:49:54.081Z">
+<meta property="og:updated_time" content="2019-10-25T07:38:36.376Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android7.1 Toast之坑">
 <meta name="twitter:description" content="Toast 作为 Android 常用的控件之一，突然在友盟统计上发现Toast报错了，那就需要麻溜的解决了。 复现123456Toast.makeText(getContext(), &amp;quot;我的Toast&amp;quot;, Toast.LENGTH_SHORT).show();     try &amp;#123;         Thread.sleep(5_000);     &amp;#125; cat">
@@ -305,8 +305,40 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/page/20190428162719.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/page/20190428162719.html" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -394,7 +426,7 @@
   <p><span>本文标题:</span>Android7.1 Toast之坑</p>
   <p><span>文章作者:</span>bug2048</p>
   <p><span>发布时间:</span>2019年04月28日 - 16:27:19</p>
-  <p><span>最后更新:</span>2019年10月25日 - 14:49:54</p>
+  <p><span>最后更新:</span>2019年10月25日 - 15:38:36</p>
   <p><span>原始链接:</span><a href="/page/20190428162719.html" title="Android7.1 Toast之坑">https://bug2048.gitee.io/page/20190428162719.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://bug2048.gitee.io/page/20190428162719.html" aria-label="复制成功！"></i></span>
   </p>
@@ -458,10 +490,6 @@
           
             <a href="/tags/Android/" rel="tag"># Android</a>
           
-            <a href="/tags/Toast/" rel="tag"># Toast</a>
-          
-            <a href="/tags/WindowManager-BadTokenException/" rel="tag"># WindowManager$BadTokenException</a>
-          
         </div>
       
 
@@ -514,6 +542,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -572,10 +603,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -583,10 +614,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">12</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -817,6 +848,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'FKHEFri0mqagYtY8wmww0Qit-gzGzoHsz',
+        appKey: 'qYxxXhjfzOriafJvHstfGcat',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

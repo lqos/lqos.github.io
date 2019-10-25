@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="bug2048">
 <meta property="og:description" content="认识transienttransient 中文意思是短暂的，临时的。 Java中transient关键字的作用，简单地说，就是让某些被修饰的成员属性变量不被序列化，这一看好像很好理解，就是不被序列化，那么什么情况下，一个对象的某些字段不需要被序列化呢？如果有如下情况，可以考虑使用关键字transient修饰： 1、类中的字段值可以根据其它字段推导出来，如一个长方形类有三个属性：长度、宽度、面积（示">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T06:50:19.842Z">
+<meta property="og:updated_time" content="2019-10-25T07:35:28.579Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="transient 关键字">
 <meta name="twitter:description" content="认识transienttransient 中文意思是短暂的，临时的。 Java中transient关键字的作用，简单地说，就是让某些被修饰的成员属性变量不被序列化，这一看好像很好理解，就是不被序列化，那么什么情况下，一个对象的某些字段不需要被序列化呢？如果有如下情况，可以考虑使用关键字transient修饰： 1、类中的字段值可以根据其它字段推导出来，如一个长方形类有三个属性：长度、宽度、面积（示">
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/工作笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">工作笔记</span>
                   </a>
                 </span>
 
@@ -329,6 +329,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/page/20190424153806.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/page/20190424153806.html" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -419,7 +429,7 @@
   <p><span>本文标题:</span>transient 关键字</p>
   <p><span>文章作者:</span>bug2048</p>
   <p><span>发布时间:</span>2019年04月24日 - 15:38:06</p>
-  <p><span>最后更新:</span>2019年10月25日 - 14:50:19</p>
+  <p><span>最后更新:</span>2019年10月25日 - 15:35:28</p>
   <p><span>原始链接:</span><a href="/page/20190424153806.html" title="transient 关键字">https://bug2048.gitee.io/page/20190424153806.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://bug2048.gitee.io/page/20190424153806.html" aria-label="复制成功！"></i></span>
   </p>
@@ -538,6 +548,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -595,10 +608,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -606,10 +619,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">12</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -840,6 +853,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'FKHEFri0mqagYtY8wmww0Qit-gzGzoHsz',
+        appKey: 'qYxxXhjfzOriafJvHstfGcat',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

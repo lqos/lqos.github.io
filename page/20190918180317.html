@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Android,WindowManager$BadTokenException,">
+  <meta name="keywords" content="Android,">
 
 
 
@@ -82,14 +82,14 @@
 
 
 <meta name="description" content="第一种情况分析：当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭 出现时机：在Activity 中开定时打开Dialog,然后关闭Activity； 解决方法：在打开Dialog或者PopupWindow，首先检测Activity是否已关闭 123456789101112/*** 检查Activity是">
-<meta name="keywords" content="Android,WindowManager$BadTokenException">
+<meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Carsh:android.view.WindowManager">
 <meta property="og:url" content="https://bug2048.gitee.io/page/20190918180317.html">
 <meta property="og:site_name" content="bug2048">
 <meta property="og:description" content="第一种情况分析：当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭 出现时机：在Activity 中开定时打开Dialog,然后关闭Activity； 解决方法：在打开Dialog或者PopupWindow，首先检测Activity是否已关闭 123456789101112/*** 检查Activity是">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T06:50:04.290Z">
+<meta property="og:updated_time" content="2019-10-25T07:38:28.953Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Carsh:android.view.WindowManager">
 <meta name="twitter:description" content="第一种情况分析：当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭 出现时机：在Activity 中开定时打开Dialog,然后关闭Activity； 解决方法：在打开Dialog或者PopupWindow，首先检测Activity是否已关闭 123456789101112/*** 检查Activity是">
@@ -305,8 +305,40 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/page/20190918180317.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/page/20190918180317.html" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -392,7 +424,7 @@
   <p><span>本文标题:</span>Carsh:android.view.WindowManager</p>
   <p><span>文章作者:</span>bug2048</p>
   <p><span>发布时间:</span>2019年09月18日 - 18:03:17</p>
-  <p><span>最后更新:</span>2019年10月25日 - 14:50:04</p>
+  <p><span>最后更新:</span>2019年10月25日 - 15:38:28</p>
   <p><span>原始链接:</span><a href="/page/20190918180317.html" title="Carsh:android.view.WindowManager">https://bug2048.gitee.io/page/20190918180317.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://bug2048.gitee.io/page/20190918180317.html" aria-label="复制成功！"></i></span>
   </p>
@@ -456,8 +488,6 @@
           
             <a href="/tags/Android/" rel="tag"># Android</a>
           
-            <a href="/tags/WindowManager-BadTokenException/" rel="tag"># WindowManager$BadTokenException</a>
-          
         </div>
       
 
@@ -510,6 +540,9 @@
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -568,10 +601,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -579,10 +612,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">12</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -813,6 +846,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'FKHEFri0mqagYtY8wmww0Qit-gzGzoHsz',
+        appKey: 'qYxxXhjfzOriafJvHstfGcat',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

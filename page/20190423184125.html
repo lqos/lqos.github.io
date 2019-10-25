@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="bug2048">
 <meta property="og:description" content="问题1234public static enum MessageDirection &amp;#123;    SEND(1),    RECEIVE(2);&amp;#125; 在使用枚举比较时，使用了equals来比较两个枚举值 123if(data.getMessageDirection().equals(Message.MessageDirection.SEND))    &amp;#123;	    ... &amp;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T06:50:12.552Z">
+<meta property="og:updated_time" content="2019-10-25T07:35:42.841Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java enum 枚举比较 == or equals ??">
 <meta name="twitter:description" content="问题1234public static enum MessageDirection &amp;#123;    SEND(1),    RECEIVE(2);&amp;#125; 在使用枚举比较时，使用了equals来比较两个枚举值 123if(data.getMessageDirection().equals(Message.MessageDirection.SEND))    &amp;#123;	    ... &amp;">
@@ -305,8 +305,40 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">工作笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/page/20190423184125.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/page/20190423184125.html" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -398,7 +430,7 @@
   <p><span>本文标题:</span>java enum 枚举比较 == or equals ??</p>
   <p><span>文章作者:</span>bug2048</p>
   <p><span>发布时间:</span>2019年04月23日 - 18:41:25</p>
-  <p><span>最后更新:</span>2019年10月25日 - 14:50:12</p>
+  <p><span>最后更新:</span>2019年10月25日 - 15:35:42</p>
   <p><span>原始链接:</span><a href="/page/20190423184125.html" title="java enum 枚举比较 == or equals ??">https://bug2048.gitee.io/page/20190423184125.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://bug2048.gitee.io/page/20190423184125.html" aria-label="复制成功！"></i></span>
   </p>
@@ -515,6 +547,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -572,10 +607,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -583,10 +618,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">12</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -817,6 +852,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'FKHEFri0mqagYtY8wmww0Qit-gzGzoHsz',
+        appKey: 'qYxxXhjfzOriafJvHstfGcat',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 

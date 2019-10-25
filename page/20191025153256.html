@@ -90,7 +90,7 @@
 <meta property="og:description" content="git ssh 公钥生成 一台设备可能存在多个git账号，如何管理呢？ 下面那两个git账号举例说明 第一个账号 xxxxxx@qq.com(github.com ) 第一个账号 xxxxxx@163.com（git.oschina.net） 步骤一、    设置Git的user name和email：12$ git config --global user.name &amp;quot;username">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://bug2048.gitee.io/page/20191025153256/1556509340222.jpeg">
-<meta property="og:updated_time" content="2019-10-25T07:28:23.716Z">
+<meta property="og:updated_time" content="2019-10-25T07:35:51.080Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git多个账户冲突问题解决">
 <meta name="twitter:description" content="git ssh 公钥生成 一台设备可能存在多个git账号，如何管理呢？ 下面那两个git账号举例说明 第一个账号 xxxxxx@qq.com(github.com ) 第一个账号 xxxxxx@163.com（git.oschina.net） 步骤一、    设置Git的user name和email：12$ git config --global user.name &amp;quot;username">
@@ -307,8 +307,40 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">工作笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/page/20191025153256.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/page/20191025153256.html" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -399,7 +431,7 @@
   <p><span>本文标题:</span>Git多个账户冲突问题解决</p>
   <p><span>文章作者:</span>bug2048</p>
   <p><span>发布时间:</span>2019年10月25日 - 15:32:56</p>
-  <p><span>最后更新:</span>2019年10月25日 - 15:28:23</p>
+  <p><span>最后更新:</span>2019年10月25日 - 15:35:51</p>
   <p><span>原始链接:</span><a href="/page/20191025153256.html" title="Git多个账户冲突问题解决">https://bug2048.gitee.io/page/20191025153256.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://bug2048.gitee.io/page/20191025153256.html" aria-label="复制成功！"></i></span>
   </p>
@@ -514,6 +546,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -562,10 +597,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -573,10 +608,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">12</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -791,6 +826,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: 'FKHEFri0mqagYtY8wmww0Qit-gzGzoHsz',
+        appKey: 'qYxxXhjfzOriafJvHstfGcat',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
