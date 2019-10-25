@@ -148,9 +148,9 @@
     
       <category term="Android" scheme="https://bug2048.gitee.io/tags/Android/"/>
     
-      <category term="Toast" scheme="https://bug2048.gitee.io/tags/Toast/"/>
-    
       <category term="WindowManager$BadTokenException" scheme="https://bug2048.gitee.io/tags/WindowManager-BadTokenException/"/>
+    
+      <category term="Toast" scheme="https://bug2048.gitee.io/tags/Toast/"/>
     
   </entry>
   
