@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="java,关键字,">
+  <meta name="keywords" content="Android,WindowManager$BadTokenException,">
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="认识transienttransient 中文意思是短暂的，临时的。 Java中transient关键字的作用，简单地说，就是让某些被修饰的成员属性变量不被序列化，这一看好像很好理解，就是不被序列化，那么什么情况下，一个对象的某些字段不需要被序列化呢？如果有如下情况，可以考虑使用关键字transient修饰： 1、类中的字段值可以根据其它字段推导出来，如一个长方形类有三个属性：长度、宽度、面积（示">
-<meta name="keywords" content="java,关键字">
+<meta name="description" content="第一种情况分析：当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭 出现时机：在Activity 中开定时打开Dialog,然后关闭Activity； 解决方法：在打开Dialog或者PopupWindow，首先检测Activity是否已关闭 123456789101112/*** 检查Activity是">
+<meta name="keywords" content="Android,WindowManager$BadTokenException">
 <meta property="og:type" content="article">
-<meta property="og:title" content="transient 关键字">
+<meta property="og:title" content="Carsh:android.view.WindowManager">
 <meta property="og:url" content="https://bug2048.gitee.io/page/20190918180317.html">
 <meta property="og:site_name" content="bug2048">
-<meta property="og:description" content="认识transienttransient 中文意思是短暂的，临时的。 Java中transient关键字的作用，简单地说，就是让某些被修饰的成员属性变量不被序列化，这一看好像很好理解，就是不被序列化，那么什么情况下，一个对象的某些字段不需要被序列化呢？如果有如下情况，可以考虑使用关键字transient修饰： 1、类中的字段值可以根据其它字段推导出来，如一个长方形类有三个属性：长度、宽度、面积（示">
+<meta property="og:description" content="第一种情况分析：当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭 出现时机：在Activity 中开定时打开Dialog,然后关闭Activity； 解决方法：在打开Dialog或者PopupWindow，首先检测Activity是否已关闭 123456789101112/*** 检查Activity是">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T03:00:17.344Z">
+<meta property="og:updated_time" content="2019-10-25T02:59:53.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="transient 关键字">
-<meta name="twitter:description" content="认识transienttransient 中文意思是短暂的，临时的。 Java中transient关键字的作用，简单地说，就是让某些被修饰的成员属性变量不被序列化，这一看好像很好理解，就是不被序列化，那么什么情况下，一个对象的某些字段不需要被序列化呢？如果有如下情况，可以考虑使用关键字transient修饰： 1、类中的字段值可以根据其它字段推导出来，如一个长方形类有三个属性：长度、宽度、面积（示">
+<meta name="twitter:title" content="Carsh:android.view.WindowManager">
+<meta name="twitter:description" content="第一种情况分析：当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭 出现时机：在Activity 中开定时打开Dialog,然后关闭Activity； 解决方法：在打开Dialog或者PopupWindow，首先检测Activity是否已关闭 123456789101112/*** 检查Activity是">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>transient 关键字 | bug2048</title>
+  <title>Carsh:android.view.WindowManager | bug2048</title>
   
 
 
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">transient 关键字</h1>
+          <h1 class="post-title" itemprop="name headline">Carsh:android.view.WindowManager</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-24T15:38:06+08:00">
-                2019-04-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-18T18:03:17+08:00">
+                2019-09-18
               </time>
             
 
@@ -304,28 +304,6 @@
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -385,18 +363,13 @@
       
 
       
-        <h1 id="认识transient"><a href="#认识transient" class="headerlink" title="认识transient"></a>认识transient</h1><p>transient 中文意思是短暂的，临时的。</p>
-<p>Java中transient关键字的作用，简单地说，就是让某些被修饰的成员属性变量不被序列化，这一看好像很好理解，就是不被序列化，那么什么情况下，一个对象的某些字段不需要被序列化呢？如果有如下情况，可以考虑使用关键字transient修饰：</p>
-<p>1、类中的字段值可以根据其它字段推导出来，如一个长方形类有三个属性：长度、宽度、面积（示例而已，一般不会这样设计），那么在序列化的时候，面积这个属性就没必要被序列化了；</p>
-<p>2、其它如密码，看具体业务需求吧，哪些字段不想被序列化；</p>
-<p>PS ArrayList、HashMap等源码中也使用transient关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * The number of times this HashMap has been structurally modified</span><br><span class="line"> * Structural modifications are those that change the number of mappings in</span><br><span class="line"> * the HashMap or otherwise modify its internal structure (e.g.,</span><br><span class="line"> * rehash).  This field is used to make iterators on Collection-views of</span><br><span class="line"> * the HashMap fail-fast.  (See ConcurrentModificationException).</span><br><span class="line"> */</span><br><span class="line">transient int modCount;</span><br></pre></td></tr></table></figure></p>
-<h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">class Rectangle implements Serializable&#123;</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     *</span><br><span class="line">     */</span><br><span class="line">    private static final long serialVersionUID = 1710022455003682613L;</span><br><span class="line">    private Integer width;</span><br><span class="line">    private Integer height;</span><br><span class="line">    private transient Integer area;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    public Rectangle (Integer width, Integer height)&#123;</span><br><span class="line">        this.width = width;</span><br><span class="line">        this.height = height;</span><br><span class="line">        this.area = width * height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setArea()&#123;</span><br><span class="line">        this.area = this.width * this.height;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public String toString()&#123;</span><br><span class="line">        StringBuffer sb = new StringBuffer(40);</span><br><span class="line">        sb.append(&quot;width : &quot;);</span><br><span class="line">        sb.append(this.width);</span><br><span class="line">        sb.append(&quot;\nheight : &quot;);</span><br><span class="line">        sb.append(this.height);</span><br><span class="line">        sb.append(&quot;\narea : &quot;);</span><br><span class="line">        sb.append(this.area);</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public class TransientExample&#123;</span><br><span class="line">    public static void main(String args[]) throws Exception &#123;</span><br><span class="line">        Rectangle rectangle = new Rectangle(3,4);</span><br><span class="line">        System.out.println(&quot;1.原始对象\n&quot;+rectangle);</span><br><span class="line">        ObjectOutputStream o = new ObjectOutputStream(new FileOutputStream(&quot;rectangle&quot;));</span><br><span class="line">        // 往流写入对象</span><br><span class="line">        o.writeObject(rectangle);</span><br><span class="line">        o.close();</span><br><span class="line"></span><br><span class="line">        // 从流读取对象</span><br><span class="line">        ObjectInputStream in = new ObjectInputStream(new FileInputStream(&quot;rectangle&quot;));</span><br><span class="line">        Rectangle rectangle1 = (Rectangle)in.readObject();</span><br><span class="line">        System.out.println(&quot;2.反序列化后的对象\n&quot;+rectangle1);</span><br><span class="line">        rectangle1.setArea();</span><br><span class="line">        System.out.println(&quot;3.恢复成原始对象\n&quot;+rectangle1);</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>打印结果是</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.原始对象</span><br><span class="line">width : 3</span><br><span class="line">height : 4</span><br><span class="line">area : 12</span><br><span class="line">2.反序列化后的对象</span><br><span class="line">width : 3</span><br><span class="line">height : 4</span><br><span class="line">area : null</span><br><span class="line">3.恢复成原始对象</span><br><span class="line">width : 3</span><br><span class="line">height : 4</span><br><span class="line">area : 12</span><br></pre></td></tr></table></figure>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>1）一旦变量被<strong>transient</strong>修饰，变量将不再是对象持久化的一部分，该变量内容在序列化后无法获得访问。</p>
-<p>2）<strong>transient</strong>关键字只能修饰变量，而不能修饰方法和类。注意，本地变量是不能被transient关键字修饰的。变量如果是用户自定义类变量，则该类需要实现Serializable接口。</p>
-<p>3）被<strong>transient</strong>关键字修饰的变量不再能被序列化，一个静态变量不管是否被transient修饰，均不能被序列化。</p>
-<p>PS：使用<strong>Externalizable</strong>序列化，不论是否使用transient修饰，都将被序列化。<br>Externalizable 是 Serializable 的派生类，实现了writeExternal(out)和readExternal(in) ;具体可自己尝试下</p>
+        <h2 id="第一种情况"><a href="#第一种情况" class="headerlink" title="第一种情况"></a><strong>第一种情况</strong></h2><p>分析：<br>当打开Dialog或者PopupWindow时，所依附的View不存在或是token令牌不存在，简单来说就是所在的窗体(Activity)已关闭</p>
+<p>出现时机：<br>在Activity 中开定时打开Dialog,然后关闭Activity；</p>
+<p>解决方法：<br>在打开Dialog或者PopupWindow，首先检测Activity是否已关闭</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line">* 检查Activity是否已关闭</span><br><span class="line">*/</span><br><span class="line">public static Boolean checkActivityIsRun(Activity activity) &#123;</span><br><span class="line">    if (activity == null) &#123;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    if (android.os.Build.VERSION.SDK_INT &gt;= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) &#123;</span><br><span class="line">        return !activity.isFinishing() || !activity.isDestroyed();</span><br><span class="line">    &#125;</span><br><span class="line">    return !activity.isFinishing();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>错误日志</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">java.lang.RuntimeException: Unable to start receiver com.xxx.JpushReceiver: android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@83caed is not valid; is your activity running?</span><br><span class="line">    at android.app.ActivityThread.handleReceiver(ActivityThread.java:3398)</span><br><span class="line">    at android.app.ActivityThread.-wrap20(ActivityThread.java)</span><br><span class="line">    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1743)</span><br><span class="line">    at android.os.Handler.dispatchMessage(Handler.java:102)</span><br><span class="line">    at android.os.Looper.loop(Looper.java:154)</span><br><span class="line">    at android.app.ActivityThread.main(ActivityThread.java:6816)</span><br><span class="line">    at java.lang.reflect.Method.invoke(Native Method)</span><br><span class="line">    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1567)</span><br><span class="line">    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1455)</span><br><span class="line">Caused by: android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@83caed is not valid; is your activity running?</span><br><span class="line">    at android.view.ViewRootImpl.setView(ViewRootImpl.java:922)</span><br><span class="line">    at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:377)</span><br><span class="line">    at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:105)</span><br><span class="line">    at android.app.Dialog.show(Dialog.java:404)</span><br><span class="line">    at com.cloudy.linglingbang.activity.msg.a.c.a(ReceiverMsgLab.java:72)</span><br><span class="line">    at com.xxx.JpushReceiver.onReceive(JpushReceiver.java:42)</span><br><span class="line">    at android.app.ActivityThread.handleReceiver(ActivityThread.java:3391)</span><br><span class="line">    ... 8 more</span><br><span class="line">android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@83caed is not valid; is your activity running?</span><br><span class="line">    at android.view.ViewRootImpl.setView(ViewRootImpl.java:922)</span><br><span class="line">    at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:377)</span><br><span class="line">    at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:105)</span><br><span class="line">    at android.app.Dialog.show(Dialog.java:404)</span><br><span class="line">    at com.cloudy.linglingbang.activity.msg.a.c.a(ReceiverMsgLab.java:72)</span><br><span class="line">    at com.cloudy.linglingbang.app.receiver.JpushReceiver.onReceive(JpushReceiver.java:42)</span><br><span class="line">    at android.app.ActivityThread.handleReceiver(ActivityThread.java:3391)</span><br><span class="line">    at android.app.ActivityThread.-wrap20(ActivityThread.java)</span><br><span class="line">    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1743)</span><br><span class="line">    at android.os.Handler.dispatchMessage(Handler.java:102)</span><br><span class="line">    at android.os.Looper.loop(Looper.java:154)</span><br><span class="line">    at android.app.ActivityThread.main(ActivityThread.java:6816)</span><br><span class="line">    at java.lang.reflect.Method.invoke(Native Method)</span><br><span class="line">    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1567)</span><br><span class="line">    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1455)</span><br></pre></td></tr></table></figure>
+<h2 id="第二种情况"><a href="#第二种情况" class="headerlink" title="第二种情况"></a><strong>第二种情况</strong></h2><p>Toast 造成的<br><a href="https://bug2048.gitee.io/bolgx/2019/04/28/Android7-1-Toast%E4%B9%8B%E5%9D%91/">https://bug2048.gitee.io/bolgx/2019/04/28/Android7-1-Toast%E4%B9%8B%E5%9D%91/</a></p>
 
       
     </div>
@@ -443,9 +416,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"># java</a>
+            <a href="/tags/Android/" rel="tag"># Android</a>
           
-            <a href="/tags/关键字/" rel="tag"># 关键字</a>
+            <a href="/tags/WindowManager-BadTokenException/" rel="tag"># WindowManager$BadTokenException</a>
           
         </div>
       
@@ -458,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/page/20190423184125.html" rel="next" title="java enum 枚举比较 == or equals ??">
-                <i class="fa fa-chevron-left"></i> java enum 枚举比较 == or equals ??
+              <a href="/page/20190508162221.html" rel="next" title="Android TextView 字体-顶部对齐">
+                <i class="fa fa-chevron-left"></i> Android TextView 字体-顶部对齐
               </a>
             
           </div>
@@ -468,8 +441,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/page/20190426141027.html" rel="prev" title="Android apk 文件结构分析">
-                Android apk 文件结构分析 <i class="fa fa-chevron-right"></i>
+              <a href="/page/20190918184444.html" rel="prev" title="WindowManager:android.view.WindowLeaked">
+                WindowManager:android.view.WindowLeaked <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -609,7 +582,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#认识transient"><span class="nav-number">1.</span> <span class="nav-text">认识transient</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#举例"><span class="nav-number">1.1.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">1.2.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一种情况"><span class="nav-number">1.</span> <span class="nav-text">第一种情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二种情况"><span class="nav-number">2.</span> <span class="nav-text">第二种情况</span></a></li></ol></div>
             
 
           </div>
