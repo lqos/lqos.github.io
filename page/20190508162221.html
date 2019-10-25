@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Android,">
+  <meta name="keywords" content="Android,TextView,">
 
 
 
@@ -81,18 +81,20 @@
 
 
 
-<meta name="description" content="APK 是 Android  PacKage 的缩写，即 Android 安装包。将 APK 文件直接传到 Android 模拟器或 Android 手机中执行即可安装。 APK 文件其实是 zip 格式，但后缀名被修改为 apk 。后缀改为zip解压如下：| 文件/目录 | 作用 ||–|–||META-INF/  |  ||res/  | 资源文件目录 ||libs/  | 如果存在的话，存放">
-<meta name="keywords" content="Android">
+<meta name="description" content="在工作中，遇到这样一种需求，TextView 中有字体大小不一致的文字，要求顶部对齐  123456789101112131415161718192021222324252627282930313233343536373839404142434445public class TopAlignSpan extends SuperscriptSpan &amp;#123;    /** 字体大小 */">
+<meta name="keywords" content="Android,TextView">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android apk 文件结构分析">
-<meta property="og:url" content="https://bug2048.gitee.io/2019/04/26/Android-apk-文件结构分析/index.html">
+<meta property="og:title" content="Android TextView 字体-顶部对齐">
+<meta property="og:url" content="https://bug2048.gitee.io/page/20190508162221.html">
 <meta property="og:site_name" content="bug2048">
-<meta property="og:description" content="APK 是 Android  PacKage 的缩写，即 Android 安装包。将 APK 文件直接传到 Android 模拟器或 Android 手机中执行即可安装。 APK 文件其实是 zip 格式，但后缀名被修改为 apk 。后缀改为zip解压如下：| 文件/目录 | 作用 ||–|–||META-INF/  |  ||res/  | 资源文件目录 ||libs/  | 如果存在的话，存放">
+<meta property="og:description" content="在工作中，遇到这样一种需求，TextView 中有字体大小不一致的文字，要求顶部对齐  123456789101112131415161718192021222324252627282930313233343536373839404142434445public class TopAlignSpan extends SuperscriptSpan &amp;#123;    /** 字体大小 */">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-25T02:50:04.726Z">
+<meta property="og:image" content="https://bug2048.gitee.io/page/20190508162221/1557305193845.jpg">
+<meta property="og:updated_time" content="2019-10-25T03:06:56.789Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android apk 文件结构分析">
-<meta name="twitter:description" content="APK 是 Android  PacKage 的缩写，即 Android 安装包。将 APK 文件直接传到 Android 模拟器或 Android 手机中执行即可安装。 APK 文件其实是 zip 格式，但后缀名被修改为 apk 。后缀改为zip解压如下：| 文件/目录 | 作用 ||–|–||META-INF/  |  ||res/  | 资源文件目录 ||libs/  | 如果存在的话，存放">
+<meta name="twitter:title" content="Android TextView 字体-顶部对齐">
+<meta name="twitter:description" content="在工作中，遇到这样一种需求，TextView 中有字体大小不一致的文字，要求顶部对齐  123456789101112131415161718192021222324252627282930313233343536373839404142434445public class TopAlignSpan extends SuperscriptSpan &amp;#123;    /** 字体大小 */">
+<meta name="twitter:image" content="https://bug2048.gitee.io/page/20190508162221/1557305193845.jpg">
 
 
 
@@ -122,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://bug2048.gitee.io/2019/04/26/Android-apk-文件结构分析/">
+  <link rel="canonical" href="https://bug2048.gitee.io/page/20190508162221.html">
 
 
 
 
 
-  <title>Android apk 文件结构分析 | bug2048</title>
+  <title>Android TextView 字体-顶部对齐 | bug2048</title>
   
 
 
@@ -245,7 +247,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/2019/04/26/Android-apk-文件结构分析/">
+    <link itemprop="mainEntityOfPage" href="https://bug2048.gitee.io/page/20190508162221.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bug2048">
@@ -262,7 +264,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Android apk 文件结构分析</h1>
+          <h1 class="post-title" itemprop="name headline">Android TextView 字体-顶部对齐</h1>
         
 
         <div class="post-meta">
@@ -274,8 +276,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-26T14:10:27+08:00">
-                2019-04-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-08T16:22:21+08:00">
+                2019-05-08
               </time>
             
 
@@ -343,7 +345,9 @@
       
 
       
-        <p>APK 是 Android  PacKage 的缩写，即 Android 安装包。将 APK 文件直接传到 Android 模拟器或 Android 手机中执行即可安装。 APK 文件其实是 zip 格式，但后缀名被修改为 apk 。<br>后缀改为zip解压如下：<br>| 文件/目录 | 作用 |<br>|–|–|<br>|META-INF/  |  |<br>|res/  | 资源文件目录 |<br>|libs/  | 如果存在的话，存放的是 ndk 编出来的 so 库 |<br>|AndroidManifest.xml  | 程序全局配置文件 |<br>|classes.dex  | dalvik 字节码   |<br>|resources.ars  |  编译后的二进制资源文件|</p>
+        <p>在工作中，遇到这样一种需求，TextView 中有字体大小不一致的文字，要求<strong>顶部对齐</strong></p>
+<img src="/page/20190508162221/1557305193845.jpg" title="顶部对齐">
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">public class TopAlignSpan extends SuperscriptSpan &#123;</span><br><span class="line"></span><br><span class="line">    /** 字体大小 */</span><br><span class="line">    private float fontSizePx;</span><br><span class="line"></span><br><span class="line">    //shift value, 0 to 1.0</span><br><span class="line">    protected float shiftPercentage = 0;</span><br><span class="line"></span><br><span class="line">    //doesn&apos;t shift</span><br><span class="line">    public TopAlignSpan(float fontSizePx) &#123;</span><br><span class="line">        this(fontSizePx, 0);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //sets the shift percentage</span><br><span class="line">    public TopAlignSpan(float fontSizePx, float shiftPercentage) &#123;</span><br><span class="line">        if (shiftPercentage &gt; 0.0 &amp;&amp; shiftPercentage &lt; 1.0) &#123;</span><br><span class="line">            this.shiftPercentage = shiftPercentage;</span><br><span class="line">        &#125;</span><br><span class="line">        this.fontSizePx = fontSizePx;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void updateDrawState(TextPaint tp) &#123;</span><br><span class="line">        //original ascent</span><br><span class="line">        float ascent = tp.ascent();</span><br><span class="line"></span><br><span class="line">        //scale down the font</span><br><span class="line">        tp.setTextSize(fontSizePx);</span><br><span class="line"></span><br><span class="line">        //get the new font ascent</span><br><span class="line">        float newAscent = tp.getFontMetrics().ascent;</span><br><span class="line"></span><br><span class="line">        //move baseline to top of old font, then move down size of new font</span><br><span class="line">        //adjust for errors with shift percentage</span><br><span class="line">     //   tp.baselineShift += (ascent - ascent * shiftPercentage)</span><br><span class="line">    //            - (newAscent - newAscent * shiftPercentage);</span><br><span class="line">    //计算基线偏移量</span><br><span class="line">  tp.baselineShift += (ascent - newAscent) * (1 - shiftPercentage);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void updateMeasureState(TextPaint tp) &#123;</span><br><span class="line">        updateDrawState(tp);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -392,6 +396,8 @@
           
             <a href="/tags/Android/" rel="tag"># Android</a>
           
+            <a href="/tags/TextView/" rel="tag"># TextView</a>
+          
         </div>
       
 
@@ -403,8 +409,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/24/transient-关键字/" rel="next" title="transient 关键字">
-                <i class="fa fa-chevron-left"></i> transient 关键字
+              <a href="/page/20190429114540.html" rel="next" title="Android studio 调试技巧">
+                <i class="fa fa-chevron-left"></i> Android studio 调试技巧
               </a>
             
           </div>
@@ -413,8 +419,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/26/Android最新版本号与API级别对应关系/" rel="prev" title="Android最新版本号与API级别对应关系">
-                Android最新版本号与API级别对应关系 <i class="fa fa-chevron-right"></i>
+              <a href="/page/20190918180317.html" rel="prev" title="Carsh:android.view.WindowManager">
+                Carsh:android.view.WindowManager <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
