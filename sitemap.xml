@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bug2048.gitee.io//404.html</loc>
+    
+    <lastmod>2019-10-26T01:46:54.863Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://bug2048.gitee.io/page/20191025144443.html</loc>
     
     <lastmod>2019-10-25T07:39:08.361Z</lastmod>
@@ -75,13 +82,6 @@
     <loc>https://bug2048.gitee.io/page/20190424153806.html</loc>
     
     <lastmod>2019-10-25T07:35:28.579Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://bug2048.gitee.io//404.html</loc>
-    
-    <lastmod>2019-10-24T11:44:28.975Z</lastmod>
     
   </url>
   
